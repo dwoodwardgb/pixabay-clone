@@ -16,7 +16,7 @@ export default function ImageDetail() {
   return (
     <>
       {image ? (
-        <section className="flex flex-col items-center my-6">
+        <section className="flex flex-col items-center my-6 space-y-4">
           <img
             alt={image?.tags}
             src={image?.largeImageURL}
@@ -26,7 +26,7 @@ export default function ImageDetail() {
           <div className="flex flex-row space-x-4">
             <ul className="space-x-4 flex flex-row items-center flex-wrap">
               {image?.tags.split(",").map((tag) => (
-                <li key={tag} className="rounded-lg border border-black p-0.5">
+                <li key={tag} className="rounded-lg border border-black p-1">
                   {tag}
                 </li>
               ))}
