@@ -1,4 +1,4 @@
-# Improvements
+# Improvements that could be made
 
 - Use [SWR](https://swr.vercel.app/) to cache images
 - Use somethinkg like Preact or Next.js for bundle size
