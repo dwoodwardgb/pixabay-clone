@@ -1,11 +1,12 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { search } from "./api";
 
-export default function ImageGallery() {
-  const [searchText, setSearchText] = useState("");
-  const [images, setImages] = useState([]);
-
+export default function ImageGallery({
+  searchText,
+  setSearchText,
+  images,
+  setImages,
+}) {
   return (
     <div className="space-y-4 my-4">
       <h1 className="text-center font-bold text-3xl">Pixabay</h1>

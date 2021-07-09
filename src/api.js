@@ -1,6 +1,6 @@
 const API_KEY = "4272121-59134f1078e603a1211a874d6";
 
-export function search(term = "red roses") {
+export function search(term) {
   const URL = `https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(
     term
   )}`;
